@@ -3,7 +3,7 @@
 ▶ Install it:
 sudo apt update
 sudo apt install g++
-
+sudo apt install libomp-dev
 
 g++ --version
 g++ -fopenmp A1.cpp -o A1
