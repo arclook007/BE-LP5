@@ -1,0 +1,39 @@
+#openMP
+
+▶ Install it:
+sudo apt update
+sudo apt install g++
+
+
+g++ --version
+g++ -fopenmp A1.cpp -o A1
+./A1
+
+
+# OR
+
+g++ -fopenmp A1.cpp -o A1
+export OMP_NUM_THREADS=4
+./A1
+
+
+#####################################################################
+
+# CUDA
+▶ Install it:
+sudo apt install nvidia-cuda-toolkit
+
+
+nvidia-smi #Display gpu stats
+
+nvcc --version
+
+nvcc A1.cu -o A1
+./A1
+
+##############################################################################################################################
+
+# or option for cuda
+gedit temp.cu
+nvcc temp.cu -o temp
+./temp
